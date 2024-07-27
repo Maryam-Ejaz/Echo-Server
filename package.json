@@ -2,15 +2,15 @@
    "name": "chat_with_mysql_backend",
    "version": "1.0.0",
    "scripts": {
-      "baseUrl": ".",
+      "baseUrl": "./",
       "build": "tsc && cpx \"src/environment/**\" \"build/environment\"",
       "dev": "nodemon --exec ts-node src/index.ts",
       "start": "ts-node src/index.ts"
    },
    "compilerOptions": {
-    "baseUrl": ".", 
+    "baseUrl": "./",
     "paths": {
-      "*": ["src/*"] 
+      "*": ["src/*"]
     }
   },
    "dependencies": {
