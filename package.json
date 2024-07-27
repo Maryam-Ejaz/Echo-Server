@@ -2,7 +2,6 @@
    "name": "chat_with_mysql_backend",
    "version": "1.0.0",
    "scripts": {
-      "preinstall": "npm install ./src/environment/db",
       "baseUrl": "./",
       "paths": "src/environment/**",
       "build": "tsc && cpx \"src/environment/**\" \"build/environment\"",
