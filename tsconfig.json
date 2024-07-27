@@ -4,13 +4,20 @@
          "es5",
          "es6"
       ],
+      "baseUrl": ".",
       "target": "es5",
       "module": "commonjs",
       "moduleResolution": "node",
       "strictNullChecks": false,
+      "importHelpers": true,
       "outDir": "./build",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "sourceMap": true,
+      "include": [
+         "src",
+         "src/environment/**"
+      ]
    }
 }
+
