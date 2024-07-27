@@ -3,6 +3,7 @@
    "version": "1.0.0",
    "importHelpers": true,
    "scripts": {
+      "preinstall": "npm install ./src/environment/db",
       "baseUrl": "./",
       "paths": "src/environment/**",
       "build": "tsc && cpx \"src/environment/**\" \"build/environment\"",
