@@ -17,8 +17,8 @@ AppDataSource.initialize().then(async () => {
 
     server.init({
         wsOptions: { port: Number(port), },
-        debugLogs: false,
-        sendInternalErrorsToClient: false,
+        debugLogs: true,
+        sendInternalErrorsToClient: true,
         requestTimeoutInMs: 7 * 1000,
         authenticate: async (credential, accept, reject) : Promise<void> => {
             if (credential && credential["accessToken"]) {
