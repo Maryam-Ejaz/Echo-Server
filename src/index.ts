@@ -16,7 +16,7 @@ AppDataSource.initialize().then(async () => {
     }
 
     server.init({
-        wssOptions: { port: Number(port), },
+        wsOptions: { port: Number(port), },
         debugLogs: false,
         sendInternalErrorsToClient: false,
         requestTimeoutInMs: 7 * 1000,
