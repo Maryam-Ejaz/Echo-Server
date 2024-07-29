@@ -8,12 +8,9 @@
    "scripts": {
       "baseUrl": "./",
       "paths": "src/environment/**",
-      "dev": "react-scripts start",
-      "start": "serve -s build",
-      "build": "react-scripts build",
-      "test": "react-scripts test --env=jsdom",
-      "eject": "react-scripts eject",
-      "heroku-postbuild": "npm run build"
+      "build": "tsc && cpx \"src/environment/**\" \"build/environment\"",
+      "dev": "nodemon --exec ts-node src/index.ts",
+      "start": "ts-node src/index.ts"
    },
    "dependencies": {
       "askless": "^2.0.3",

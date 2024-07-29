@@ -1,4 +1,4 @@
-src/environment/jwt-private.key
+
 .idea/
 .vscode/
 node_modules/
