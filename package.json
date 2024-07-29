@@ -13,7 +13,7 @@
       "bcrypt": "^5.1.1",
       "bufferutil": "^4.0.7",
       "jsonwebtoken": "^9.0.2",
-      "mysql2": "^3.10.3",
+      "mysql2": "^3.11.0",
       "reflect-metadata": "^0.1.13",
       "typeorm": "0.3.17",
       "utf-8-validate": "^6.0.3"
@@ -26,6 +26,6 @@
       "typescript": "5.2.2"
    },
    "engines": {
-    "node": "20.12.1"
-  }
+      "node": "20.12.1"
+   }
 }

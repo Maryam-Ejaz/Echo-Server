@@ -6,7 +6,7 @@ export const dbDatasourceOptions: DataSourceOptions = {
     // TODO: replace with your database configuration in the fields bellow:
     type: "mysql",
     host: "sql.freedb.tech", //localhost
-    port: 3306,
+    port: parseInt(process.env.DB_PORT, 10) || 3306,
     username: "freedb_rooot",
     password: "gaJ&fhDEC53%t8u",
     database: "freedb_flutter_chat_app_with_nodejs",

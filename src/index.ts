@@ -2,6 +2,7 @@ import { AppDataSource } from "./data/data-source/db-datasouce";
 import {authController, controllers, initializeControllers} from "./domain/controllers-and-services";
 import {verifyJwtAccessToken} from "./utils/jwt-utils";
 import {AsklessServer} from "askless";
+const port = process.env.PORT || 3000;
 
 
 AppDataSource.initialize().then(async () => {
@@ -15,7 +16,7 @@ AppDataSource.initialize().then(async () => {
     }
 
     server.init({
-        wsOptions: { port: 3000, },
+        wsOptions: { port: Number(port), },
         debugLogs: false,
         sendInternalErrorsToClient: false,
         requestTimeoutInMs: 7 * 1000,
