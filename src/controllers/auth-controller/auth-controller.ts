@@ -12,7 +12,7 @@ export class AuthController implements Controller {
             route: "logout",
             handleCreate: async context => {
                 await this.authService.logout(context.userId);
-                context.successCallback('OK');a
+                context.successCallback('OK');
             },
             toOutput: entity => entity, // Always "OK"
         });
